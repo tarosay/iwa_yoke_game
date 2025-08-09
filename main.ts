@@ -1,107 +1,107 @@
 input.onButtonPressed(Button.A, function () {
-    ロケット.change(LedSpriteProperty.X, -1)
+    車.change(LedSpriteProperty.X, -1)
 })
 input.onButtonPressed(Button.AB, function () {
-    玉1 = game.createSprite(randint(0, 4), 0)
-    玉2 = game.createSprite(randint(0, 4), 0)
-    玉3 = game.createSprite(randint(0, 4), 0)
-    玉4 = game.createSprite(randint(0, 4), 0)
-    玉1のスタートした時間 = input.runningTime()
-    玉2のスタートした時間 = input.runningTime()
-    玉3のスタートした時間 = input.runningTime()
-    玉4のスタートした時間 = input.runningTime()
-    ロケット = game.createSprite(2, 4)
+    岩1 = game.createSprite(randint(0, 4), 0)
+    岩2 = game.createSprite(randint(0, 4), 0)
+    岩3 = game.createSprite(randint(0, 4), 0)
+    岩4 = game.createSprite(randint(0, 4), 0)
+    岩1のスタートした時間 = input.runningTime()
+    岩2のスタートした時間 = input.runningTime()
+    岩3のスタートした時間 = input.runningTime()
+    岩4のスタートした時間 = input.runningTime()
+    車 = game.createSprite(2, 4)
     game.setLife(3)
     得点 = 0
 })
 input.onButtonPressed(Button.B, function () {
-    ロケット.change(LedSpriteProperty.X, 1)
+    車.change(LedSpriteProperty.X, 1)
 })
-let 玉4のスタートからの時間 = 0
-let 玉3のスタートからの時間 = 0
-let 玉2のスタートからの時間 = 0
-let 玉1のスタートからの時間 = 0
+let 岩4のスタートからの時間 = 0
+let 岩3のスタートからの時間 = 0
+let 岩2のスタートからの時間 = 0
+let 岩1のスタートからの時間 = 0
 let 得点 = 0
-let ロケット: game.LedSprite = null
-let 玉4のスタートした時間 = 0
-let 玉3のスタートした時間 = 0
-let 玉2のスタートした時間 = 0
-let 玉1のスタートした時間 = 0
-let 玉4: game.LedSprite = null
-let 玉3: game.LedSprite = null
-let 玉2: game.LedSprite = null
-let 玉1: game.LedSprite = null
-玉1 = game.createSprite(randint(0, 4), 0)
-玉2 = game.createSprite(randint(0, 4), 0)
-玉3 = game.createSprite(randint(0, 4), 0)
-玉4 = game.createSprite(randint(0, 4), 0)
-玉1のスタートした時間 = input.runningTime()
-玉2のスタートした時間 = input.runningTime()
-玉3のスタートした時間 = input.runningTime()
-玉4のスタートした時間 = input.runningTime()
-ロケット = game.createSprite(2, 4)
+let 車: game.LedSprite = null
+let 岩4のスタートした時間 = 0
+let 岩3のスタートした時間 = 0
+let 岩2のスタートした時間 = 0
+let 岩1のスタートした時間 = 0
+let 岩4: game.LedSprite = null
+let 岩3: game.LedSprite = null
+let 岩2: game.LedSprite = null
+let 岩1: game.LedSprite = null
+岩1 = game.createSprite(randint(0, 4), 0)
+岩2 = game.createSprite(randint(0, 4), 0)
+岩3 = game.createSprite(randint(0, 4), 0)
+岩4 = game.createSprite(randint(0, 4), 0)
+岩1のスタートした時間 = input.runningTime()
+岩2のスタートした時間 = input.runningTime()
+岩3のスタートした時間 = input.runningTime()
+岩4のスタートした時間 = input.runningTime()
+車 = game.createSprite(2, 4)
 game.setLife(5)
 得点 = 0
 basic.forever(function () {
-    玉1のスタートからの時間 = input.runningTime() - 玉1のスタートした時間
-    玉2のスタートからの時間 = input.runningTime() - 玉2のスタートした時間
-    玉3のスタートからの時間 = input.runningTime() - 玉3のスタートした時間
-    玉4のスタートからの時間 = input.runningTime() - 玉4のスタートした時間
-    if (200 < 玉1のスタートからの時間) {
-        玉1.change(LedSpriteProperty.Y, 1)
-        玉1のスタートした時間 = input.runningTime()
-        玉1のスタートからの時間 = 0
+    岩1のスタートからの時間 = input.runningTime() - 岩1のスタートした時間
+    岩2のスタートからの時間 = input.runningTime() - 岩2のスタートした時間
+    岩3のスタートからの時間 = input.runningTime() - 岩3のスタートした時間
+    岩4のスタートからの時間 = input.runningTime() - 岩4のスタートした時間
+    if (200 < 岩1のスタートからの時間) {
+        岩1.change(LedSpriteProperty.Y, 1)
+        岩1のスタートした時間 = input.runningTime()
+        岩1のスタートからの時間 = 0
     }
-    if (250 < 玉2のスタートからの時間) {
-        玉2.change(LedSpriteProperty.Y, 1)
-        玉2のスタートした時間 = input.runningTime()
-        玉2のスタートからの時間 = 0
+    if (250 < 岩2のスタートからの時間) {
+        岩2.change(LedSpriteProperty.Y, 1)
+        岩2のスタートした時間 = input.runningTime()
+        岩2のスタートからの時間 = 0
     }
-    if (300 < 玉3のスタートからの時間) {
-        玉3.change(LedSpriteProperty.Y, 1)
-        玉3のスタートした時間 = input.runningTime()
-        玉3のスタートからの時間 = 0
+    if (300 < 岩3のスタートからの時間) {
+        岩3.change(LedSpriteProperty.Y, 1)
+        岩3のスタートした時間 = input.runningTime()
+        岩3のスタートからの時間 = 0
     }
-    if (350 < 玉4のスタートからの時間) {
-        玉4.change(LedSpriteProperty.Y, 1)
-        玉4のスタートした時間 = input.runningTime()
-        玉4のスタートからの時間 = 0
+    if (350 < 岩4のスタートからの時間) {
+        岩4.change(LedSpriteProperty.Y, 1)
+        岩4のスタートした時間 = input.runningTime()
+        岩4のスタートからの時間 = 0
     }
-    if (玉1.get(LedSpriteProperty.Y) == 4) {
-        if (ロケット.get(LedSpriteProperty.X) == 玉1.get(LedSpriteProperty.X)) {
+    if (岩1.get(LedSpriteProperty.Y) == 4) {
+        if (車.get(LedSpriteProperty.X) == 岩1.get(LedSpriteProperty.X)) {
             game.removeLife(1)
         } else {
             得点 += 1
         }
-        玉1.delete()
-        玉1 = game.createSprite(randint(0, 4), 0)
+        岩1.delete()
+        岩1 = game.createSprite(randint(0, 4), 0)
     }
-    if (玉2.get(LedSpriteProperty.Y) == 4) {
-        if (ロケット.get(LedSpriteProperty.X) == 玉2.get(LedSpriteProperty.X)) {
+    if (岩2.get(LedSpriteProperty.Y) == 4) {
+        if (車.get(LedSpriteProperty.X) == 岩2.get(LedSpriteProperty.X)) {
             game.removeLife(1)
         } else {
             得点 += 1
         }
-        玉2.delete()
-        玉2 = game.createSprite(randint(0, 4), 0)
+        岩2.delete()
+        岩2 = game.createSprite(randint(0, 4), 0)
     }
-    if (玉3.get(LedSpriteProperty.Y) == 4) {
-        if (ロケット.get(LedSpriteProperty.X) == 玉3.get(LedSpriteProperty.X)) {
+    if (岩3.get(LedSpriteProperty.Y) == 4) {
+        if (車.get(LedSpriteProperty.X) == 岩3.get(LedSpriteProperty.X)) {
             game.removeLife(1)
         } else {
             得点 += 1
         }
-        玉3.delete()
-        玉3 = game.createSprite(randint(0, 4), 0)
+        岩3.delete()
+        岩3 = game.createSprite(randint(0, 4), 0)
     }
-    if (玉4.get(LedSpriteProperty.Y) == 4) {
-        if (ロケット.get(LedSpriteProperty.X) == 玉4.get(LedSpriteProperty.X)) {
+    if (岩4.get(LedSpriteProperty.Y) == 4) {
+        if (車.get(LedSpriteProperty.X) == 岩4.get(LedSpriteProperty.X)) {
             game.removeLife(1)
         } else {
             得点 += 1
         }
-        玉4.delete()
-        玉4 = game.createSprite(randint(0, 4), 0)
+        岩4.delete()
+        岩4 = game.createSprite(randint(0, 4), 0)
     }
     game.setScore(得点)
 })
