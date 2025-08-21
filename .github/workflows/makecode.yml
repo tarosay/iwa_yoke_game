@@ -1,0 +1,12 @@
+name: MakeCode
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: MakeCode screenshot
+      uses: microsoft/pxt-action@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        branch: master
