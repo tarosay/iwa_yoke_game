@@ -18,7 +18,13 @@ MakeCode でこのリポジトリを編集します。
 * **読み込む** をクリックし、 **URLから読み込む...** をクリックしてください
 * **https://github.com/tarosay/iwa_yoke_game** を貼り付けてインポートをクリックしてください
 
+## ブロックのプレビュー
+
+この画像は、masterブランチの最終コミットのブロックコードを示しています。
+この画像は、更新されるまで数分かかる場合があります。
+
+![ブロックのレンダリングビュー](https://github.com/tarosay/iwa_yoke_game/raw/master/.github/makecode/blocks.png)
+
 #### メタデータ (検索、レンダリングに使用)
 
 * for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
